@@ -1,149 +1,92 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🧭 Data Track
 
-## Contexto
+> Assistente de IA Generativa que orienta estudantes e profissionais na jornada de entrada na área de dados — currículo, portfólio, entrevistas técnicas e trilha de habilidades.
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+## 💡 O Que é o Data Track?
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+O Data Track é um assistente de orientação de carreira que **ensina e orienta**, não garante vagas. Ele ajuda a estruturar currículo e portfólio, prepara para entrevistas técnicas e indica uma trilha clara de habilidades por nível, sempre terminando com um próximo passo prático.
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+**O que o Data Track faz:**
+- ✅ Dá dicas práticas de currículo e portfólio para dados
+- ✅ Ajuda a se preparar para entrevistas técnicas (SQL, Python, estatística, comportamental)
+- ✅ Orienta sobre trilha de habilidades por nível (iniciante, intermediário, avançado)
+- ✅ Sempre sugere um próximo passo prático
 
----
+**O que o Data Track NÃO faz:**
+- ❌ Não garante vagas nem faz encaminhamento para empresas
+- ❌ Não substitui mentoria profissional aprofundada
+- ❌ Não inventa informações fora da sua base de conhecimento
 
-## O Que Você Deve Entregar
+## 🏗️ Arquitetura
 
-### 1. Documentação do Agente
-
-Defina **o que** seu agente faz e **como** ele funciona:
-
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
-
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
-
----
-
-### 2. Base de Conhecimento
-
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
-
-| Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
-
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
-
----
-
-### 3. Prompts do Agente
-
-Documente os prompts que definem o comportamento do seu agente:
-
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
-
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
-
----
-
-### 4. Aplicação Funcional
-
-Desenvolva um **protótipo funcional** do seu agente:
-
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
-
-📁 **Pasta:** [`src/`](./src/)
-
----
-
-### 5. Avaliação e Métricas
-
-Descreva como você avalia a qualidade do seu agente:
-
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
-
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
-
----
-
-### 6. Pitch
-
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
-
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
-
----
-
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
-
-| Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
-
----
-
-## Estrutura do Repositório
-
-```
-📁 lab-agente-financeiro/
-│
-├── 📄 README.md
-│
-├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
-│
-├── 📁 docs/                          # Documentação do projeto
-│   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
-│   ├── 02-base-conhecimento.md       # Estratégia de dados
-│   ├── 03-prompts.md                 # Engenharia de prompts
-│   ├── 04-metricas.md                # Avaliação e métricas
-│   └── 05-pitch.md                   # Roteiro do pitch
-│
-├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
-│
-├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
-│
-└── 📁 examples/                      # Referências e exemplos
-    └── README.md
+```mermaid
+flowchart TD
+    A[Usuário] --> B[Notebook - Google Colab]
+    B --> C[Gemini API]
+    C --> D[Base de Conhecimento]
+    D --> C
+    C --> E[Resposta com Próximo Passo Prático]
 ```
 
----
+**Stack:**
+- Interface: Notebook (Google Colab / Jupyter)
+- LLM: Gemini API (`gemini-3.5-flash`, camada gratuita)
+- Dados: Markdown estruturado
 
-## Dicas Finais
+## 📁 Estrutura do Projeto
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+```
+├── data/
+│   └── base_conhecimento.md       # Currículo, entrevistas e trilha de habilidades
+│
+├── docs/
+│   ├── 01-documentacao-agente.md  # Caso de uso e persona
+│   ├── 02-base-conhecimento.md    # Estratégia de dados
+│   ├── 03-prompts.md              # System prompt e exemplos
+│   ├── 04-metricas.md             # Avaliação de qualidade
+│   └── 05-pitch.md                # Apresentação do projeto
+│
+└── src/
+    └── data_track.ipynb           # Aplicação (notebook)
+```
+
+## 🚀 Como Executar
+
+### 1. Obter a chave de API do Gemini
+Acesse [aistudio.google.com/apikey](https://aistudio.google.com/apikey), faça login com sua conta Google e crie uma chave gratuita.
+
+### 2. Instalar dependência
+
+```
+pip install google-generativeai
+```
+
+### 3. Rodar o Data Track
+Abra `src/data_track.ipynb` no Google Colab, cole sua chave de API na célula indicada e execute as células em ordem.
+
+## 🎯 Exemplo de Uso
+
+**Pergunta:** "Como me portar em uma entrevista?"
+**Data Track:** "Entrevista na área de dados dá um frio na barriga, mas o segredo para se portar bem é demonstrar uma linha de raciocínio clara e estruturada... Próximo passo prático: escolha um projeto do seu portfólio hoje e treine explicá-lo em voz alta em até 2 minutos."
+
+**Pergunta:** "Sou iniciante, o que devo aprender primeiro?"
+**Data Track:** "Começar na área de dados é empolgante, mas o segredo para não se perder é focar na base... Próximo passo prático: baixe um banco de dados gratuito e tente instalar o MySQL ou PostgreSQL para praticar os primeiros comandos de SQL."
+
+## 📊 Métricas de Avaliação
+
+| Métrica | Objetivo |
+|---|---|
+| **Relevância** | O agente responde o que foi perguntado? |
+| **Aderência ao escopo** | Evita inventar informações fora do tema (anti-alucinação)? |
+| **Clareza** | A resposta é fácil de entender e bem estruturada? |
+| **Tom** | Soa acolhedor e motivador, como planejado? |
+
+## 🎬 Diferenciais
+
+- **Foco em próximo passo:** toda resposta termina com uma ação prática
+- **Simples e local:** roda em um notebook, sem infraestrutura complexa
+- **Seguro:** reconhece os limites do próprio escopo em vez de inventar respostas
+
+## 📝 Documentação Completa
+
+Toda a documentação técnica, estratégia de prompt e casos de teste estão disponíveis na pasta [`docs/`](./docs).
