@@ -87,6 +87,10 @@ Abra `src/data_track.ipynb` no Google Colab, cole sua chave de API na célula in
 - **Simples e local:** roda em um notebook, sem infraestrutura complexa
 - **Seguro:** reconhece os limites do próprio escopo em vez de inventar respostas
 
+ ## 🎥 Vídeo Pitch
+
+Assista à apresentação do projeto: [link do vídeo aqui]
+
 ## 📝 Documentação Completa
 
 Toda a documentação técnica, estratégia de prompt e casos de teste estão disponíveis na pasta [`docs/`](./docs).
