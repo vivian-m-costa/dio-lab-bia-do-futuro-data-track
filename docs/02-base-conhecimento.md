@@ -1,55 +1,22 @@
-# Base de Conhecimento
+# 📚 02 - Base de Conhecimento
 
-## Dados Utilizados
+## Currículo e Portfólio para Dados
+- Priorize projetos práticos (mesmo pequenos) em vez de listar só cursos/certificados
+- Inclua link para GitHub com projetos organizados e README explicativo
+- Destaque ferramentas usadas (Python, SQL, Power BI, etc.) de forma objetiva
+- Quantifique resultados quando possível (ex: "reduziu tempo de análise em X%")
+- Portfólio pode incluir: um projeto de análise exploratória, um de visualização de dados, um envolvendo modelagem/ML
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
+## Perguntas Comuns em Entrevistas Técnicas
+- **SQL:** joins, agregações, subqueries — praticar em plataformas como LeetCode/StrataScratch
+- **Python:** manipulação de dados com pandas, lógica básica, estruturas de dados
+- **Estatística:** conceitos de distribuição, testes de hipótese, correlação vs causalidade
+- **Comportamental:** "conte sobre um projeto de dados que você fez", "como lida com dados incompletos"
 
-| Arquivo | Formato | Utilização no Agente |
-|---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
+## Trilha de Habilidades por Nível
+- **Iniciante:** Excel/planilhas, SQL básico, lógica de programação (Python), estatística descritiva
+- **Intermediário:** pandas/numpy, visualização (Power BI/Tableau/matplotlib), versionamento (Git), fundamentos de ML
+- **Avançado:** modelagem preditiva, cloud (AWS/GCP/Azure), engenharia de dados básica, deploy de modelos
 
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
-
----
-
-## Adaptações nos Dados
-
-> Você modificou ou expandiu os dados mockados? Descreva aqui.
-
-[Sua descrição aqui]
-
----
-
-## Estratégia de Integração
-
-### Como os dados são carregados?
-> Descreva como seu agente acessa a base de conhecimento.
-
-[ex: Os JSON/CSV são carregados no início da sessão e incluídos no contexto do prompt]
-
-### Como os dados são usados no prompt?
-> Os dados vão no system prompt? São consultados dinamicamente?
-
-[Sua descrição aqui]
-
----
-
-## Exemplo de Contexto Montado
-
-> Mostre um exemplo de como os dados são formatados para o agente.
-
-```
-Dados do Cliente:
-- Nome: João Silva
-- Perfil: Moderado
-- Saldo disponível: R$ 5.000
-
-Últimas transações:
-- 01/11: Supermercado - R$ 450
-- 03/11: Streaming - R$ 55
-...
-```
+## Estratégia de dados
+A base fica em `data/base_conhecimento.md` e é injetada diretamente na instrução de sistema (`system_instruction`) do modelo, junto com o prompt principal. Isso garante que o Data Track responda com base em informações organizadas, em vez de "alucinar" respostas genéricas.
