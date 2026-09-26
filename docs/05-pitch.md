@@ -14,3 +14,8 @@ Diferente de buscar informações soltas na internet, o Data Track centraliza or
 
 ## Próximos passos (se o projeto continuasse)
 Expandir a base de conhecimento com mais exemplos reais de currículos e processos seletivos, e adicionar uma interface web simples (ex: Streamlit) para tornar o acesso ainda mais fácil.
+
+
+## 🎥 Vídeo Pitch
+
+Assista à apresentação do projeto: [link do vídeo aqui]
