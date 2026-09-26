@@ -1,44 +1,16 @@
-# Pitch (3 minutos)
+# 🎤 05 - Pitch
 
-> [!TIP]
-> Você pode usar alguns slides pra apoiar no seu Pitch e mostrar sua solução na prática.
- 
-## Roteiro Sugerido
+## O Problema
+Estudantes e profissionais que querem entrar na área de dados muitas vezes não sabem por onde começar: não têm clareza sobre o que priorizar no currículo, como se preparar para entrevistas técnicas, ou qual trilha de habilidades seguir em cada nível. Essa falta de orientação gera insegurança e atrasa a entrada no mercado.
 
-### 1. O Problema (30 seg)
-> Qual dor do cliente você resolve?
+## A Solução
+O **Data Track** é um assistente virtual que orienta essa jornada de forma acolhedora e prática. Ele ajuda a melhorar currículo e portfólio, prepara para entrevistas técnicas com dicas concretas (SQL, Python, estatística, comportamental) e indica uma trilha clara de habilidades por nível — sempre terminando cada resposta com um próximo passo prático, para que a pessoa saia da conversa sabendo o que fazer.
 
-[Sua descrição aqui]
+## Como funciona
+O assistente foi construído com uma base de conhecimento estruturada sobre currículo, entrevistas e trilha de carreira, e um prompt que garante respostas relevantes, no tom certo, e que reconhece quando uma pergunta foge do escopo — evitando respostas inventadas.
 
-### 2. A Solução (1 min)
-> Como seu agente resolve esse problema?
+## O Valor
+Diferente de buscar informações soltas na internet, o Data Track centraliza orientação confiável e personalizável num só lugar, com uma conversa natural — como ter um mentor disponível a qualquer momento para tirar dúvidas sobre a jornada na área de dados.
 
-[Sua descrição aqui]
-
-### 3. Demonstração (1 min)
-> Mostre o agente funcionando (pode ser gravação de tela)
-
-[Descreva o que será mostrado]
-
-### 4. Diferencial e Impacto (30 seg)
-> Por que essa solução é inovadora e qual é o impacto dela na sociedade?
-
-[Sua descrição aqui]
-
----
-
-## Checklist do Pitch
-
-- [ ] Duração máxima de 3 minutos
-- [ ] Problema claramente definido
-- [ ] Solução demonstrada na prática
-- [ ] Diferencial explicado
-- [ ] Áudio e vídeo com boa qualidade
-
----
-
-## Link do Vídeo
-
-> Cole aqui o link do seu pitch (YouTube, Loom, Google Drive, etc.)
-
-[Link do vídeo]
+## Próximos passos (se o projeto continuasse)
+Expandir a base de conhecimento com mais exemplos reais de currículos e processos seletivos, e adicionar uma interface web simples (ex: Streamlit) para tornar o acesso ainda mais fácil.
