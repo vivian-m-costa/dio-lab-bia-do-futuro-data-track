@@ -89,7 +89,7 @@ Abra `src/data_track.ipynb` no Google Colab, cole sua chave de API na célula in
 
  ## 🎥 Vídeo Pitch
 
-Assista à apresentação do projeto: [link do vídeo aqui]
+Assista à apresentação do projeto: https://drive.google.com/file/d/1VL8490vjmeq47YsfnO1LLnlNiKW4eM-3/view?usp=drive_link
 
 ## 📝 Documentação Completa
 
